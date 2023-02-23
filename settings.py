@@ -1,9 +1,9 @@
 class Settings:
-    # a calss to store all settigns for ALien Invasion
+    """class to store all settings for Alien Invasion"""
 
     def __init__(self):
-        # initialize the game's settings
+        # initialize the game's settins.
         # screen settings
-        self.screen.width = 1200
-        self.screen.height = 800
+        self.screen_width = 1200
+        self.screen_height = 800
         self.bg_color = (230, 230, 230)
