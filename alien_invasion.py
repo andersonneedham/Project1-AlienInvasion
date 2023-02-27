@@ -38,6 +38,7 @@ class AlienInvasion:
             self._check_events()
             self.ship.update()
             self._update_bullets()
+            self._update_aliens()
             self._update_screen()
 
     def _update_bullets(self):
@@ -52,6 +53,10 @@ class AlienInvasion:
 
         # redraw the screen during each pass through the loop
         self.screen.fill(self.bg_color)
+
+    def _update_aliens(self):
+        # update the positions of all aliens in the fleet
+        self.aliens.update()
 
     def _check_events(self):
         # respond to keypresses and mouse events
