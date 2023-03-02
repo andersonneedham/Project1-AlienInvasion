@@ -65,6 +65,7 @@ class Scoreboard:
             self.prep_high_score()
 
     def show_score(self):
-        # draw score to the screen
+        # draw score and level to the screen
         self.screen.blit(self.score_image, self.score_rect)
         self.screen.blit(self.high_score_image, self.high_score_rect)
+        self.screen.blit(self.level_image, self.level_rect)
